@@ -60,7 +60,12 @@ button{
     border:none;
     width:9rem;
     height:3rem;
-    color:inherit;
+}
+
+button:hover{
+    background-color: inherit;
+    border:2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
 }
 
 
