@@ -20,7 +20,7 @@ For the 3 Column Preview Card Component project, my main objective was to craft 
 ![](./3-column-preview-card-component-main/design/desktop-design.jpg)
 
 ### Links
-- Live Site URL: [Click here](https://neel-07.github.io/Stats-Preview-Card-Component/)
+- Live Site URL: [Click here](https://neel-07.github.io/3-column-preview-card-component/)
 
 ## My process
  In approaching this project, I began by carefully organizing the HTML structure to encapsulate the essential components of the 3-column preview card. Emphasis was placed on creating a clean and semantic layout. Moving on to the CSS implementation, I concentrated on achieving visually appealing design elements and ensuring seamless responsiveness across various screen sizes. Significant attention was devoted to typography, color palettes, and layout considerations to ensure user-friendly and elegant design.
