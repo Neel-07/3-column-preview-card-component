@@ -1,90 +1,246 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.container{
-    height:100vh;
-    background-color: hsl(0, 0%, 95%);
-    display:flex;
-    justify-content: center;
-    align-items: center;
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-
-.card1{
-    background-color: hsl(31, 77%, 52%);
-    height:60%;
-    Width:23%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding:3rem;
-    padding-bottom:4.5rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+body {
+  background-color: hsl(0, 0%, 95%);
+}
+.container {
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.card2{
-    background-color: hsl(184, 100%, 22%);
-    height:60%;
-    width:23%;
-    padding:3rem;
-    padding-bottom:4.5rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+.card1 {
+  overflow: hidden;
+  position:relative;
+  background-color: hsl(31, 77%, 52%);
+  height: 32%;
+  width: 90%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding:1rem;
+  padding-left:1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.card3{
-    background-color: hsl(179, 100%, 13%);
-    height:60%;
-    width:23%;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding:3rem;
-    padding-bottom:4.5rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-
+.card2 {
+  overflow: hidden;
+  position:relative;
+  background-color: hsl(184, 100%, 22%);
+  height: 32%;
+  width: 90%;
+  padding: 1rem;
+  padding-left:1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-button{
-    font-size:16px;
-    font-weight:bold;
-    margin-top: 2rem;
-    border-radius:30px;
-    border:none;
-    width:9rem;
-    height:3rem;
+.card3 {
+  overflow: hidden;
+  position:relative;
+  background-color: hsl(179, 100%, 13%);
+  height: 32%;
+  width: 90%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1rem;
+  padding-left:1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-button:hover{
-    background-color: inherit;
-    border:2px solid hsl(0, 0%, 95%);
-    color: hsl(0, 0%, 95%);
-    cursor: pointer;
+button {
+  position:absolute;
+  top:73%;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-radius: 30px;
+  border: none;
+  width: 7rem;
+  height: 2.3rem;
 }
 
-
-h1{
-    font-family: 'Big Shoulders Display', sans-serif; 
-    color:hsl(0, 0%, 95%); 
-    font-size: 2.7rem;
+button:hover {
+  background-color: inherit;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  cursor: pointer;
 }
 
-P{
-    font-family: 'Lexend Deca', sans-serif;
-    color:hsla(0, 50%, 98%, 0.584);
-    line-height: 1.7;
+h1 {
+  margin-top: 0.5rem;  
+  top:20%;
+  position:absolute;
+  font-family: "Big Shoulders Display", sans-serif;
+  color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
 }
 
-img{
-    height:3rem;
-    width:5rem;
+p{
+  top: 40%;
+  width:80%;
+  font-size: 0.65rem;
+  position:absolute;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0, 50%, 98%, 0.584);
+  line-height: 1.7;
+}
+
+img {
+  position:absolute;
+  height: 1.7rem;
+  width: 3rem;
 }
 /* font-family: 'Lexend Deca', sans-serif; */
 /* font-family: 'Big Shoulders Display', sans-serif; */
+@media (min-width:600px) and (max-width:1030px)  {
+    .container {
+        flex-direction: row;
+      }
+      .card1 {
+        height: 60%;
+        width: 33%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        padding: 3rem;
+        padding-left:2rem;
+        padding-bottom: 4.5rem;
+      }
+      
+      .card2 {
+        height: 60%;
+        width: 33%;
+        padding: 3rem;
+        padding-left:2rem;
+        padding-bottom: 4.5rem;
+      }
+      
+      .card3 {
+        
+        height: 60%;
+        width: 33%;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+        padding: 3rem;
+        padding-left:2rem;
+        padding-bottom: 4.5rem;
+      }
+      
+      button {
+        font-size: 16px;
+        margin-top: 4rem;
+        width: 9rem;
+        height: 3rem;
+      }
+      
+      button:hover {
+        background-color: inherit;
+        border: 2px solid hsl(0, 0%, 95%);
+        color: hsl(0, 0%, 95%);
+        cursor: pointer;
+      }
+      
+      h1 {
+        margin-top:2rem;
+        font-family: "Big Shoulders Display", sans-serif;
+        color: hsl(0, 0%, 95%);
+        font-size: 2.7rem;
+      }
+      
+      P {
+        font-size: 1rem;
+        width: 72%;
+        font-family: "Lexend Deca", sans-serif;
+        color: hsla(0, 50%, 98%, 0.584);
+        line-height: 1.7;
+      }
+      
+      img {
+        height: 3rem;
+        width: 5rem;
+      }
+}
+@media (min-width: 1031px) {
+  .container {
+    flex-direction: row;
+  }
+  .card1 {
+    height: 65%;
+    width: 23%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0px;
+    padding: 3rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  .card2 {
+    height: 65%;
+    width: 23%;
+    padding: 3rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  .card3 {
+    height: 65%;
+    width: 23%;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    padding: 3rem;
+    padding-bottom: 4.5rem;
+  }
+  
+  button {
+    font-size: 16px;
+    margin-top: 3rem;
+    width: 9rem;
+    height: 3rem;
+  }
+  
+  button:hover {
+    background-color: inherit;
+    border: 2px solid hsl(0, 0%, 95%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
+  }
+  
+  h1 {
+    margin-top:2rem;
+    font-family: "Big Shoulders Display", sans-serif;
+    color: hsl(0, 0%, 95%);
+    font-size: 2.7rem;
+  }
+  
+  P {
+    margin-top:0.75rem;
+    font-size: 1rem;
+    width: 65%;
+    font-family: "Lexend Deca", sans-serif;
+    color: hsla(0, 50%, 98%, 0.584);
+    line-height: 1.7;
+  }
+  
+  img {
+    height: 3rem;
+    width: 5rem;
+  }
+}
+
+
